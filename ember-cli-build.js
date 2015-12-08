@@ -1,9 +1,13 @@
-/*jshint node:true*/
+/* jshint node:true */
 /* global require, module */
+/* jscs:disable */
 var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
   var app = new EmberAddon(defaults, {
+    jscsOptions: {
+      testGenerator: testGenerator
+    }
     // Add options here
   });
 
@@ -16,3 +20,19 @@ module.exports = function(defaults) {
 
   return app.toTree();
 };
+
+function testGenerator(relativePath, errors) {
+  if (errors) {
+    errors = '\\n' + this.escapeErrorString(errors);
+  }
+
+  var expectString = relativePath + ' should pass JSCS' + errors;
+
+  return [
+    'describe("JSCS - ' + relativePath + '", function () {',
+      'it("should pass jscs", function () {',
+        'expect(' + !errors + ', "' + expectString + '").to.be.ok;',
+      '});',
+    '});'
+  ].join('\n');
+}
