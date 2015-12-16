@@ -1,22 +1,24 @@
 {
   "name": "ember-cli-iced-mocha",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
+  "version": "0.0.1-alpha",
+  "description": "An Ember addon for exploring the potential of an improved html reporter for ember-mocha",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SaladFork/ember-cli-iced-mocha.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Elad Shahar <Elad@EladShahar.com> and contributors",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SaladFork/ember-cli-iced-mocha/issues"
+  },
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "0.6.4",
