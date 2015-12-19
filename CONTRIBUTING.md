@@ -10,8 +10,6 @@
 
 Tests are written in [Mocha](http://mochajs.org/) using the BDD approach described in Charles Lowell's [Mocha is Born for BDD](https://vimeo.com/146960282) talk.
 
-Note that it is intentional that this addon's tests do not use the included reporter. While it would be great for this addon to be "self-hosting," it would also compromise the validity of the test output.
-
 ### Running Tests
 
 * `ember test`
