@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-iced-mocha",
   "version": "0.0.1-alpha",
-  "description": "An Ember addon for exploring the potential of an improved html reporter for ember-mocha",
+  "description": "An Ember addon for exploring the potential of an improved html reporter for ember-cli-mocha",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
