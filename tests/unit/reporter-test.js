@@ -11,7 +11,7 @@ import MockRunner from '../helpers/mock-runner';
 
 import Reporter from 'ember-cli-iced-mocha/reporter';
 
-describe('Reporter', function() {
+describe('Unit: Reporter', function() {
 
   let reporter, runner;
   beforeEach(function() {

@@ -9,7 +9,7 @@ import { expect } from 'chai';
 
 import MockRunner from '../helpers/mock-runner';
 
-describe('Mock Runner', function() {
+describe('Unit: Mock Runner', function() {
 
   let runner;
   beforeEach(function() {
